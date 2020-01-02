@@ -1,0 +1,33 @@
+---
+title: "Notes"
+output: html_notebook
+---
+
+## The shape of the data
+
+Each list element in train_x is a single review.
+The features of each review make up a vector of words, which are notated by their
+rank based on their frequency.
+  Therefore, we work with numbers instead of words. 
+
+## Data processing
+
+* Deep learning models don't take lists of features; they need to be converted
+into tensors.
+
+## Model building
+
+Training X: matrix
+Training Y: vector
+
+Fully connected networks with dense layers and relu activators work well with
+this type of problem.
+
+The number of hidden units determines how complex representation we allow our
+model to assume. Choosing the number of hidden units is an art, not a science.
+
+Key architectural decisions: 
+
+* How many layers?
+* How many hidden units?
+
